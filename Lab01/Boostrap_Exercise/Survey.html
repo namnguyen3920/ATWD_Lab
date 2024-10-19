@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="text-center">
+      <img src="Logo-HCMIU.svg.png" alt="Organization Logo" class="img-fluid" style="max-width: 150px;">
+      <h2 class="my-3">Survey</h2>
+      <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    </div>
+
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first-name">First Name</label>
+          <input type="text" class="form-control" id="first-name" name="first-name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last-name">Last Name</label>
+          <input type="text" class="form-control" id="last-name" name="last-name" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date-of-birth">Date of Birth</label>
+        <input type="date" class="form-control" id="date-of-birth" name="date-of-birth" required>
+      </div>
+
+      <div class="form-group">
+        <label>How did you hear about us?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="search-engine" name="hear-about" value="search-engine">
+          <label class="form-check-label" for="search-engine">Search engine</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="word-of-mouth" name="hear-about" value="word-of-mouth">
+          <label class="form-check-label" for="word-of-mouth">Word of mouth</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="social-media" name="hear-about" value="social-media">
+          <label class="form-check-label" for="social-media">Social Media</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="other" name="hear-about" value="other">
+          <label class="form-check-label" for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Would you like to receive announcements about new CDs and special offers?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="yes-notifications" name="receive-notifications" value="yes">
+          <label class="form-check-label" for="yes-notifications">YES, I'd like that.</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="yes-email" name="receive-notifications" value="email">
+          <label class="form-check-label" for="yes-email">YES, please send me email announcements.</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="contact-method">Please contact me by:</label>
+        <select class="form-control" id="contact-method" name="contact-method">
+          <option value="email-or-postal">Email or postal mail</option>
+          <option value="email-only">Email only</option>
+          <option value="postal-only">Postal mail only</option>
+        </select>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
